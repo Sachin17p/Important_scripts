@@ -1,0 +1,9 @@
+scancel -t PD -u mm21s023-sky ; cancel all jobs for user mm21s023-sky
+scontrol show job 456         ; show all the details of job id 456 
+scancel 234                   ; cancel the job with id 234
+sbatch relaxation.sh >> log   ; submit the job file relaxation.sh and dump the o/p to log file  
+sacctmgr show qos             ; name of different ques in sbatch system 
+
+# To use phonopy 
+module load anaconda3 
+
